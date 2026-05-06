@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocket Photographer | Rate Card 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Kanit', sans-serif; background-color: #ffffff; color: #334155; }
+        .package-card { border: 1px solid #f1f5f9; transition: all 0.3s ease; }
+        .package-card:hover { border-color: #3b82f6; transform: translateY(-4px); }
+        .diff-badge { background: #dcfce7; color: #166534; font-size: 11px; padding: 2px 8px; border-radius: 99px; font-weight: 600; display: inline-block; margin-top: 4px; }
+        
+        /* สไตล์รูปภาพแบบเต็มใบ */
+        .portfolio-full-img { 
+            width: 100%; 
+            height: auto; 
+            display: block;
+            border-radius: 20px; 
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+            transition: transform 0.3s ease;
+        }
+        .portfolio-full-img:hover {
+            transform: scale(1.02);
+        }
+
+        .tiktok-btn {
+            background: #000000;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        .tiktok-btn:hover {
+            border-color: #fe2c55;
+            transform: scale(1.02);
+        }
+
+        /* Booking Section Styles */
+        .booking-card-modern {
+            background: #ffffff;
+            border-radius: 40px;
+            padding: 40px;
+            box-shadow: 0 10px 30px -5px rgba(0,0,0,0.05);
+            border: 1px solid #f1f5f9;
+        }
+        .line-action-btn {
+            background: #1e293b;
+            color: white;
+            padding: 18px 32px;
+            border-radius: 18px;
+            font-weight: 600;
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            transition: 0.3s;
+        }
+        .line-action-btn:hover { background: #0f172a; transform: translateY(-2px); }
+    </style>
+</head>
+<body class="bg-slate-50/30">
+
+    <header class="py-16 text-center bg-white border-b">
+        <h1 class="text-5xl font-800 mb-2 text-slate-900 tracking-tighter uppercase">Rocket Photographer</h1>
+        <p class="text-slate-400 font-200 text-lg">"บริการด้วยหัวใจ เก็บครบทุกความทรงจำ" 🚀</p>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-12">
+        
+        <!-- Highlights -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
+            <div class="bg-white p-6 rounded-3xl text-center border border-slate-100 shadow-sm">
+                <span class="text-3xl mb-2 block">👥</span>
+                <p class="font-600 text-slate-900">ทีมงาน 2 คน</p>
+                <p class="text-[10px] text-slate-400 uppercase">Professional Team</p>
+            </div>
+            <div class="bg-white p-6 rounded-3xl text-center border border-slate-100 shadow-sm">
+                <span class="text-3xl mb-2 block">💡</span>
+                <p class="font-600 text-slate-900">ระบบไฟพร้อม</p>
+                <p class="text-[10px] text-slate-400 uppercase">Lighting System</p>
+            </div>
+            <div class="bg-white p-6 rounded-3xl text-center border border-slate-100 shadow-sm">
+                <span class="text-3xl mb-2 block">⚡</span>
+                <p class="font-600 text-slate-900">สแกนรับรูปทันที</p>
+                <p class="text-[10px] text-slate-400 uppercase">Instant QR Photo</p>
+            </div>
+            <div class="bg-white p-6 rounded-3xl text-center border border-slate-100 shadow-sm">
+                <span class="text-3xl mb-2 block">🚀</span>
+                <p class="font-600 text-slate-900">ส่งรูปใน 1-2 วัน</p>
+                <p class="text-[10px] text-slate-400 uppercase">Fast Delivery</p>
+            </div>
+        </div>
+
+        <!-- TikTok Section -->
+        <h2 class="text-2xl font-800 mb-6 border-l-4 border-black pl-4 text-slate-900 uppercase">🎬 Video Portfolio</h2>
+        <a href="https://www.tiktok.com/@supakit__k__?_r=1&_t=ZS-968Ks2JupVN" target="_blank" class="block">
+            <div class="tiktok-btn p-10 rounded-[2.5rem] text-white text-center shadow-2xl mb-16">
+                <div class="flex justify-center mb-4">
+                    <svg class="w-12 h-12 fill-white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.03 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.9-.32-1.98-.23-2.81.33-.85.51-1.44 1.43-1.58 2.41-.14 1.01.23 2.06.94 2.81 1.24 1.31 3.44 1.34 4.7.04.41-.42.66-.96.75-1.54.12-1.32.06-2.65.07-3.97l.02-9.41z"/>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-800 mb-2 uppercase tracking-wide">คลิกชมผลงานวิดีโอใน TikTok</h3>
+                <p class="text-slate-300 font-200">รับชมบรรยากาศงานจริงแบบ Cinematic @supakit__k__</p>
+            </div>
+        </a>
+
+        <!-- งานแต่ง -->
+        <h2 class="text-2xl font-800 mb-6 border-l-4 border-slate-900 pl-4 text-slate-900 uppercase">💍 แพ็กเกจงานแต่งงาน</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 items-start">
+            <img src="https://img1.pic.in.th/images/S__140607492_0.jpg" class="portfolio-full-img" alt="Wedding 1">
+            <img src="https://img2.pic.in.th/S__140607494_0.jpg" class="portfolio-full-img" alt="Wedding 2">
+        </div>
+
+        <!-- รายละเอียดงานแต่ง -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+            <div class="package-card bg-white p-8 rounded-3xl text-center">
+                <h3 class="font-600 text-slate-500 mb-1">ช่วงเช้า</h3>
+                <p class="text-xs text-blue-600 font-600 mb-4">(06:00 – 11:00 น.)</p>
+                <div class="space-y-3">
+                    <p class="text-sm text-slate-400">ภาพนิ่ง: <span class="font-600 text-slate-900">4,000.-</span></p>
+                    <p class="text-sm text-blue-600 font-600 leading-tight">ภาพนิ่ง + วิดีโอ: <br><span class="text-3xl font-800">5,200.-</span></p>
+                    <span class="diff-badge">+ เพิ่มวิดีโอ 1,200.-</span>
+                </div>
+            </div>
+            <div class="package-card bg-slate-900 p-8 rounded-3xl text-white shadow-xl text-center">
+                <h3 class="font-600 text-blue-400 mb-1 italic">ยอดนิยม</h3>
+                <h3 class="font-600 text-white mb-1">เหมาเช้า + บ่าย</h3>
+                <p class="text-xs text-blue-200 font-600 mb-4">(06:00 – 16:00 น.)</p>
+                <div class="space-y-3">
+                    <p class="text-sm opacity-60">ภาพนิ่ง: <span class="font-600 text-white">7,000.-</span></p>
+                    <p class="text-sm text-blue-400 font-600 leading-tight">ภาพนิ่ง + วิดีโอ: <br><span class="text-4xl font-800 text-white">9,000.-</span></p>
+                    <span class="diff-badge" style="background:#1e3a8a; color:#bfdbfe">+ เพิ่มวิดีโอ 2,000.-</span>
+                </div>
+            </div>
+            <div class="package-card bg-white p-8 rounded-3xl text-center">
+                <h3 class="font-600 text-slate-500 mb-1">ช่วงเย็น</h3>
+                <p class="text-xs text-blue-600 font-600 mb-4">(17:00 – 21:00 น.)</p>
+                <div class="space-y-3">
+                    <p class="text-sm text-slate-400">ภาพนิ่ง: <span class="font-600 text-slate-900">3,500.-</span></p>
+                    <p class="text-sm text-blue-600 font-600 leading-tight">ภาพนิ่ง + วิดีโอ: <br><span class="text-3xl font-800">4,500.-</span></p>
+                    <span class="diff-badge">+ เพิ่มวิดีโอ 1,000.-</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Port / Profile -->
+        <div class="bg-white p-10 rounded-[3rem] border border-slate-100 shadow-sm mb-16">
+            <h3 class="text-3xl font-800 mb-8 text-slate-900 uppercase tracking-tight text-center">👤 PORT / PROFILE</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <img src="https://img2.pic.in.th/S__140623880_0.jpg" class="portfolio-full-img" alt="Port 1">
+                <img src="https://img2.pic.in.th/S__140623881_0.jpg" class="portfolio-full-img" alt="Port 2">
+                <img src="https://img1.pic.in.th/images/S__140623882_0.jpg" class="portfolio-full-img" alt="Port 3">
+                <img src="https://img1.pic.in.th/images/S__140623877_0.jpg" class="portfolio-full-img" alt="Port 4">
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                <div class="text-center p-6 bg-slate-50 rounded-2xl">
+                    <p class="text-slate-400 text-xs mb-1 uppercase">ถ่ายเดี่ยว (1 ชม.)</p>
+                    <p class="text-3xl font-800 text-blue-600">500.-</p>
+                </div>
+                <div class="text-center p-6 bg-slate-50 rounded-2xl">
+                    <p class="text-slate-400 text-xs mb-1 uppercase">กลุ่มเล็ก 3-4 คน</p>
+                    <p class="text-3xl font-800 text-blue-600">1,200.-</p>
+                </div>
+                <div class="text-center p-6 bg-slate-50 rounded-2xl">
+                    <p class="text-slate-400 text-xs mb-1 uppercase">กลุ่มใหญ่ 5-10 คน</p>
+                    <p class="text-3xl font-800 text-blue-600">1,700.-</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ฟุตบอล -->
+        <div class="bg-blue-600 p-10 rounded-[3rem] text-white shadow-lg mb-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                <div>
+                    <h3 class="text-3xl font-800 mb-6 uppercase tracking-tight italic">⚽ ถ่ายภาพนักกีฬา (ฟุตบอล)</h3>
+                    <div class="space-y-4 mb-8">
+                        <div class="flex justify-between border-b border-blue-400 pb-2"><span>1 ชั่วโมง</span><span class="font-800 text-xl">1,300.-</span></div>
+                        <div class="flex justify-between border-b border-blue-400 pb-2"><span>3–4 ชั่วโมง</span><span class="font-800 text-xl">2,500.-</span></div>
+                        <div class="flex justify-between border-b border-blue-400 pb-2"><span>6–8 ชั่วโมง</span><span class="font-800 text-xl">4,000.-</span></div>
+                    </div>
+                    <p class="text-xs opacity-80">*ช่างภาพ 2 คน พร้อมเก็บทุกช็อตสำคัญ</p>
+                </div>
+                <div>
+                    <img src="https://img1.pic.in.th/images/S__140623876_0.jpg" class="portfolio-full-img" alt="Football Action">
+                </div>
+            </div>
+        </div>
+
+        <!-- ส่วนการจองคิวงานดีไซน์ใหม่ (Update Based on image_848511.png) -->
+        <div class="booking-card-modern">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-800 mb-8 flex items-center text-slate-900">
+                        <span class="mr-3 text-3xl">💰</span> การจองคิวงาน
+                    </h2>
+                    <ul class="space-y-5 text-slate-600">
+                        <li class="flex items-center text-lg">
+                            <span class="text-blue-600 mr-3 text-xl">•</span> 
+                            <span>โอนมัดจำ <span class="text-blue-600 font-800">50%</span> เพื่อล็อคคิวงาน</span>
+                        </li>
+                        <li class="flex items-center text-lg">
+                            <span class="text-blue-600 mr-3 text-xl">•</span> 
+                            <span>ส่วนที่เหลือชำระหน้างานหลังจบพิธี</span>
+                        </li>
+                        <li class="flex items-center text-lg">
+                            <span class="text-blue-600 mr-3 text-xl">•</span> 
+                            <span>🏦 กสิกรไทย (K-Bank): <span class="font-800 text-slate-900">127-8-69805-6</span></span>
+                        </li>
+                        <li class="flex items-center text-lg">
+                            <span class="text-blue-600 mr-3 text-xl">•</span> 
+                            <span>ชื่อบัญชี: <span class="font-800 text-slate-900">ศุภกฤต เกตุสุวรรณ์</span></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex flex-col items-center justify-center space-y-6">
+                    <div class="w-full">
+                        <a href="https://line.me/ti/p/supakit__k__" class="line-action-btn shadow-xl shadow-slate-200">
+                            ทักไลน์จองคิว: supakit__k__
+                        </a>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-xs text-slate-400 mb-1 uppercase tracking-widest font-600">โทรติดต่อสอบถาม</p>
+                        <p class="text-4xl font-800 text-slate-900 tracking-tighter">082-496-5250</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="py-12 text-center text-slate-300 text-[10px] font-200 uppercase tracking-widest">
+        © 2026 ROCKET PHOTOGRAPHER. ALL RIGHTS RESERVED.
+    </footer>
+
+</body>
+</html>
