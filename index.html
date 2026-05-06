@@ -8,11 +8,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400;600;800&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Kanit', sans-serif; background-color: #ffffff; color: #334155; }
-        .package-card { border: 1px solid #f1f5f9; transition: all 0.3s ease; }
+        .package-card { border: 1px solid #f1f5f9; transition: all 0.3s ease; display: flex; flex-direction: column; height: 100%; }
         .package-card:hover { border-color: #3b82f6; transform: translateY(-4px); }
         .diff-badge { background: #dcfce7; color: #166534; font-size: 11px; padding: 2px 8px; border-radius: 99px; font-weight: 600; display: inline-block; margin-top: 4px; }
         
-        /* สไตล์รูปภาพแบบเต็มใบ */
         .portfolio-full-img { 
             width: 100%; 
             height: auto; 
@@ -21,21 +20,11 @@
             box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
             transition: transform 0.3s ease;
         }
-        .portfolio-full-img:hover {
-            transform: scale(1.02);
-        }
+        .portfolio-full-img:hover { transform: scale(1.02); }
 
-        .tiktok-btn {
-            background: #000000;
-            transition: all 0.3s ease;
-            border: 2px solid transparent;
-        }
-        .tiktok-btn:hover {
-            border-color: #fe2c55;
-            transform: scale(1.02);
-        }
+        .tiktok-btn { background: #000000; transition: all 0.3s ease; border: 2px solid transparent; }
+        .tiktok-btn:hover { border-color: #fe2c55; transform: scale(1.02); }
 
-        /* Booking Section Styles */
         .booking-card-modern {
             background: #ffffff;
             border-radius: 40px;
@@ -66,7 +55,6 @@
 
     <main class="max-w-6xl mx-auto px-4 py-12">
         
-        <!-- Highlights -->
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
             <div class="bg-white p-6 rounded-3xl text-center border border-slate-100 shadow-sm">
                 <span class="text-3xl mb-2 block">👥</span>
@@ -90,7 +78,6 @@
             </div>
         </div>
 
-        <!-- TikTok Section -->
         <h2 class="text-2xl font-800 mb-6 border-l-4 border-black pl-4 text-slate-900 uppercase">🎬 Video Portfolio</h2>
         <a href="https://www.tiktok.com/@supakit__k__?_r=1&_t=ZS-968Ks2JupVN" target="_blank" class="block">
             <div class="tiktok-btn p-10 rounded-[2.5rem] text-white text-center shadow-2xl mb-16">
@@ -104,20 +91,18 @@
             </div>
         </a>
 
-        <!-- งานแต่ง -->
         <h2 class="text-2xl font-800 mb-6 border-l-4 border-slate-900 pl-4 text-slate-900 uppercase">💍 แพ็กเกจงานแต่งงาน</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 items-start">
             <img src="https://img1.pic.in.th/images/S__140607492_0.jpg" class="portfolio-full-img" alt="Wedding 1">
             <img src="https://img2.pic.in.th/S__140607494_0.jpg" class="portfolio-full-img" alt="Wedding 2">
         </div>
 
-        <!-- รายละเอียดงานแต่ง -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
             <div class="package-card bg-white p-8 rounded-3xl text-center">
                 <h3 class="font-600 text-slate-500 mb-1">ช่วงเช้า</h3>
                 <p class="text-xs text-blue-600 font-600 mb-4">(06:00 – 11:00 น.)</p>
                 <div class="space-y-3">
-                    <p class="text-sm text-slate-400">ภาพนิ่ง: <span class="font-600 text-slate-900">4,000.-</span></p>
+                    <p class="text-sm text-slate-400">ภาพนิ่งอย่างเดียว: <span class="font-600 text-slate-900 font-bold">4,000.-</span></p>
                     <p class="text-sm text-blue-600 font-600 leading-tight">ภาพนิ่ง + วิดีโอ: <br><span class="text-3xl font-800">5,200.-</span></p>
                     <span class="diff-badge">+ เพิ่มวิดีโอ 1,200.-</span>
                 </div>
@@ -127,7 +112,7 @@
                 <h3 class="font-600 text-white mb-1">เหมาเช้า + บ่าย</h3>
                 <p class="text-xs text-blue-200 font-600 mb-4">(06:00 – 16:00 น.)</p>
                 <div class="space-y-3">
-                    <p class="text-sm opacity-60">ภาพนิ่ง: <span class="font-600 text-white">7,000.-</span></p>
+                    <p class="text-sm opacity-60">ภาพนิ่งอย่างเดียว: <span class="font-600 text-white font-bold">7,000.-</span></p>
                     <p class="text-sm text-blue-400 font-600 leading-tight">ภาพนิ่ง + วิดีโอ: <br><span class="text-4xl font-800 text-white">9,000.-</span></p>
                     <span class="diff-badge" style="background:#1e3a8a; color:#bfdbfe">+ เพิ่มวิดีโอ 2,000.-</span>
                 </div>
@@ -136,24 +121,88 @@
                 <h3 class="font-600 text-slate-500 mb-1">ช่วงเย็น</h3>
                 <p class="text-xs text-blue-600 font-600 mb-4">(17:00 – 21:00 น.)</p>
                 <div class="space-y-3">
-                    <p class="text-sm text-slate-400">ภาพนิ่ง: <span class="font-600 text-slate-900">3,500.-</span></p>
+                    <p class="text-sm text-slate-400">ภาพนิ่งอย่างเดียว: <span class="font-600 text-slate-900 font-bold">3,500.-</span></p>
                     <p class="text-sm text-blue-600 font-600 leading-tight">ภาพนิ่ง + วิดีโอ: <br><span class="text-3xl font-800">4,500.-</span></p>
                     <span class="diff-badge">+ เพิ่มวิดีโอ 1,000.-</span>
                 </div>
             </div>
         </div>
 
-        <!-- Port / Profile -->
+        <h2 class="text-2xl font-800 mb-6 border-l-4 border-orange-500 pl-4 text-slate-900 uppercase">🙏 แพ็กเกจงานอุปสมบท (งานบวช)</h2>
+        <div class="grid grid-cols-1 md:grid-cols-1 gap-6 mb-8 items-start">
+            <img src="https://img1.pic.in.th/images/S__140607493_0.jpg" class="portfolio-full-img" alt="งานบวช Rocket Photographer">
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+            <div class="package-card bg-white p-8 rounded-3xl text-center border-t-4 border-orange-300">
+                <h3 class="font-600 text-slate-600 mb-1">วันปลงผม (9 ชม.)</h3>
+                <p class="text-xs text-orange-600 font-600 mb-4">(12:00 – 21:00 น.)</p>
+                <div class="space-y-3 mt-auto">
+                    <p class="text-sm text-slate-400">ภาพนิ่งอย่างเดียว: <span class="font-600 text-slate-900">6,000.-</span></p>
+                    <p class="text-sm text-orange-600 font-600 leading-tight">ภาพนิ่ง + วิดีโอ: <br><span class="text-3xl font-800">7,500.-</span></p>
+                    <span class="diff-badge" style="background:#fff7ed; color:#c2410c">+ เพิ่มวิดีโอ 1,500.-</span>
+                </div>
+            </div>
+            <div class="package-card bg-white p-8 rounded-3xl text-center border-t-4 border-orange-400">
+                <h3 class="font-600 text-slate-600 mb-1">วันปลงผม (6 ชม.)</h3>
+                <p class="text-xs text-orange-600 font-600 mb-4">(12:00 – 18:00 น.)</p>
+                <div class="space-y-3 mt-auto">
+                    <p class="text-sm text-slate-400">ภาพนิ่งอย่างเดียว: <span class="font-600 text-slate-900">4,000.-</span></p>
+                    <p class="text-sm text-orange-600 font-600 leading-tight">ภาพนิ่ง + วิดีโอ: <br><span class="text-3xl font-800">4,800.-</span></p>
+                    <span class="diff-badge" style="background:#fff7ed; color:#c2410c">+ เพิ่มวิดีโอ 800.-</span>
+                </div>
+            </div>
+            <div class="package-card bg-orange-50 p-8 rounded-3xl text-center border-orange-200 border-2 shadow-lg">
+                <h3 class="font-600 text-orange-700 mb-1 italic">ยอดนิยม</h3>
+                <h3 class="font-600 text-orange-700 mb-1">วันบวช (6 ชม.)</h3>
+                <p class="text-xs text-orange-600 font-600 mb-4">(06:00 – 12:00 น.)</p>
+                <div class="space-y-3 mt-auto">
+                    <p class="text-sm text-orange-800 opacity-60">ภาพนิ่งอย่างเดียว: <span class="font-600">4,500.-</span></p>
+                    <p class="text-sm text-orange-700 font-600 leading-tight">ภาพนิ่ง + วิดีโอ: <br><span class="text-4xl font-800">4,800.-</span></p>
+                    <span class="diff-badge" style="background:#ffedd5; color:#9a3412">+ เพิ่มวิดีโอเพียง 300.-</span>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="text-2xl font-800 mb-6 border-l-4 border-slate-400 pl-4 text-slate-900 uppercase">🕯️ แพ็กเกจงานฌาปนกิจ (งานศพ)</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+             <div class="package-card bg-white p-8 rounded-3xl text-center">
+                <h3 class="font-600 text-slate-600 mb-1">สวดอภิธรรม (2 ชม.)</h3>
+                <p class="text-xs text-slate-400 font-600 mb-4">(19:00 – 21:00 น.)</p>
+                <div class="space-y-3 mt-auto">
+                    <p class="text-sm text-slate-400">ภาพนิ่งอย่างเดียว: <span class="font-600 text-slate-900">2,000.-</span></p>
+                    <p class="text-sm text-slate-600 font-600 leading-tight">ภาพนิ่ง + วิดีโอ: <br><span class="text-3xl font-800 text-slate-900">3,500.-</span></p>
+                    <span class="diff-badge" style="background:#f1f5f9; color:#475569">+ เพิ่มวิดีโอ 1,500.-</span>
+                </div>
+            </div>
+            <div class="package-card bg-white p-8 rounded-3xl text-center border-t-4 border-slate-400">
+                <h3 class="font-600 text-slate-600 mb-1">วันฌาปนกิจ (6 ชม.)</h3>
+                <p class="text-xs text-slate-400 font-600 mb-4">(06:00 – 14:00 น.)</p>
+                <div class="space-y-3 mt-auto">
+                    <p class="text-sm text-slate-400">ภาพนิ่งอย่างเดียว: <span class="font-600 text-slate-900">4,000.-</span></p>
+                    <p class="text-sm text-slate-600 font-600 leading-tight">ภาพนิ่ง + วิดีโอ: <br><span class="text-3xl font-800 text-slate-900">6,000.-</span></p>
+                    <span class="diff-badge" style="background:#f1f5f9; color:#475569">+ เพิ่มวิดีโอ 2,000.-</span>
+                </div>
+            </div>
+            <div class="package-card bg-slate-50 p-8 rounded-3xl text-center border-dashed border-2 border-slate-300">
+                <h3 class="font-600 text-slate-500 mb-1 italic">Rocket Photographer</h3>
+                <h3 class="font-600 text-slate-900 mb-1 uppercase">เรทงาน 3 ชั่วโมง</h3>
+                <p class="text-xs text-slate-400 font-600 mb-4">(เก็บบรรยากาศสำรวม)</p>
+                <div class="space-y-3 mt-auto">
+                    <p class="text-sm text-slate-400">ภาพนิ่ง + วิดีโอ: <br><span class="text-4xl font-800 text-slate-900">4,500.-</span></p>
+                    <p class="text-[10px] text-slate-400 italic">รวมคลิป Highlight 3-5 นาที</p>
+                </div>
+            </div>
+        </div>
+
         <div class="bg-white p-10 rounded-[3rem] border border-slate-100 shadow-sm mb-16">
             <h3 class="text-3xl font-800 mb-8 text-slate-900 uppercase tracking-tight text-center">👤 PORT / PROFILE</h3>
-            
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
                 <img src="https://img2.pic.in.th/S__140623880_0.jpg" class="portfolio-full-img" alt="Port 1">
                 <img src="https://img2.pic.in.th/S__140623881_0.jpg" class="portfolio-full-img" alt="Port 2">
                 <img src="https://img1.pic.in.th/images/S__140623882_0.jpg" class="portfolio-full-img" alt="Port 3">
                 <img src="https://img1.pic.in.th/images/S__140623877_0.jpg" class="portfolio-full-img" alt="Port 4">
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
                 <div class="text-center p-6 bg-slate-50 rounded-2xl">
                     <p class="text-slate-400 text-xs mb-1 uppercase">ถ่ายเดี่ยว (1 ชม.)</p>
@@ -170,7 +219,6 @@
             </div>
         </div>
 
-        <!-- ฟุตบอล -->
         <div class="bg-blue-600 p-10 rounded-[3rem] text-white shadow-lg mb-16">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
                 <div>
@@ -188,7 +236,6 @@
             </div>
         </div>
 
-        <!-- ส่วนการจองคิวงานดีไซน์ใหม่ (Update Based on image_848511.png) -->
         <div class="booking-card-modern">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div>
